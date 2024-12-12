@@ -1,0 +1,50 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+
+# Database files
+*.sqlite3
+db.sqlite3
+
+# Media files
+media/
+
+assets
+bootstrap4
+
+
+
+# Static files (generated)
+staticfiles/
+
+# Logs
+*.log
+
+# Django secret keys and environment files
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Backup files
+*.bak
+*.tmp
+
+# Node.js dependencies
+node_modules/
+dist/
+build/
+
+# Vim swap files
+*.swp
+*.swo

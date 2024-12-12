@@ -1,0 +1,34 @@
+/* Styling for each destination item */
+.destination {
+  padding: 10px;
+  gap: 10px;
+  margin-left: 0px;
+  background-color: rgb(248, 246, 246);
+}
+/* Styling for the destination subtitle (desc) */
+.destination_subtitle {
+  margin: 10px 0;
+}
+
+/* Apply clamping to the description paragraph */
+.destination_subtitle p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+
+  /* CSS for limiting text to 3 lines with ellipsis */
+  display: -webkit-box; /* For multi-line clamping */
+  -webkit-box-orient: vertical; /* Set orientation to vertical */
+  -webkit-line-clamp: 3; /* Limit the text to 3 lines */
+  overflow: hidden; /* Hide content that overflows */
+  text-overflow: ellipsis; /* Show ellipsis at the end */
+}
+
+/* Styling for destination price */
+.destination_price {
+  font-size: 18px;
+  color: #007bff; /* Blue color for price */
+  font-weight: bold;
+  margin-top: 10px;
+}

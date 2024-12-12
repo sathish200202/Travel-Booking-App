@@ -1,0 +1,121 @@
+/* Resetting margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+  background-image: url("../images/destination_1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #ffffff; /* White text for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Creating a light overlay with a smooth gradient effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with slight transparency */
+  z-index: -1; /* Keep the overlay behind content */
+}
+
+/* Container for the destination content */
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Slight dark background for readability */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  max-width: 900px;
+  width: 100%;
+  backdrop-filter: blur(10px); /* Blurred background effect */
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffffff; /* Light text for readability */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  animation: fadeIn 1s ease-in-out; /* Add smooth fade-in animation */
+}
+
+h5 {
+  font-size: 2em;
+  color: #00bcd4; /* AI-inspired bright color */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+img {
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Paragraph for description */
+p {
+  font-size: 1.2em;
+  color: #e1e1e1; /* Light grey for readability */
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+p.offer {
+  font-weight: bold;
+  color: #ff9800; /* Orange color for special offers */
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  img {
+    width: 80%; /* Adjust image width for smaller screens */
+  }
+
+  h5 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
